@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Analysis">
+      <UniqueIdentifier>{14d7feac-a9b6-4520-8e9e-34afd36d08d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{52445219-263d-4f3c-a9b4-03c9890306d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Analysis\ILogger.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Analysis\WindowsLogger.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Analysis\BaseLogger.h" />
+    <ClInclude Include="..\Source\Types\Vector3.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Main.cpp" />
+    <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Analysis\BaseLogger.cpp" />
+    <ClCompile Include="..\Source\Types\Vector3.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
