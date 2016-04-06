@@ -19,19 +19,30 @@
     <ClInclude Include="..\Source\Analysis\WindowsLogger.h">
       <Filter>Analysis</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Analysis\BaseLogger.h" />
     <ClInclude Include="..\Source\Types\Vector3.h">
       <Filter>Types</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Analysis\LogType.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Analysis\BaseLogger.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Precompiled.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp" />
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp">
       <Filter>Analysis</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Analysis\BaseLogger.cpp" />
     <ClCompile Include="..\Source\Types\Vector3.cpp">
       <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Analysis\BaseLogger.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Analysis\LogType.cpp">
+      <Filter>Analysis</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -21,11 +21,14 @@
   <ItemGroup>
     <ClInclude Include="..\Source\Analysis\BaseLogger.h" />
     <ClInclude Include="..\Source\Analysis\ILogger.h" />
+    <ClInclude Include="..\Source\Analysis\LogType.h" />
     <ClInclude Include="..\Source\Analysis\WindowsLogger.h" />
+    <ClInclude Include="..\Source\Precompiled.h" />
     <ClInclude Include="..\Source\Types\Vector3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Analysis\BaseLogger.cpp" />
+    <ClCompile Include="..\Source\Analysis\LogType.cpp" />
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
     <ClCompile Include="..\Source\Types\Vector3.cpp" />
@@ -84,6 +87,10 @@
     <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
     <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -96,6 +103,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

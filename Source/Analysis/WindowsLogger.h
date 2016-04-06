@@ -12,6 +12,6 @@ namespace CryoStar
 		WindowsLogger();
 		virtual ~WindowsLogger();
 
-		virtual void LogDebug(const std::string& message, const std::string& tag = "") override;
+		virtual void Log(const std::string& builtMessage) const override;
 	};
 }

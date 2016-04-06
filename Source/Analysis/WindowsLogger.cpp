@@ -1,3 +1,5 @@
+#include "Precompiled.h"
+
 #include "WindowsLogger.h"
 
 #include <Windows.h>
@@ -14,12 +16,11 @@ WindowsLogger::~WindowsLogger()
 
 }
 
-void WindowsLogger::LogDebug(const std::string & message, const std::string& tag)
+void WindowsLogger::Log(const std::string& builtMessage) const
 {
-	BaseClass::LogDebug(message);
+	BaseClass::Log(builtMessage);
 
-	//Need at add a newline because the output function won't do that for us
-	std::string messageModified = tag + "> " + message + '\n';
+	std::string modifiedMessage = builtMessage + '\n';
 
-	OutputDebugString(messageModified.c_str());
+	OutputDebugString(modifiedMessage.c_str());
 }
