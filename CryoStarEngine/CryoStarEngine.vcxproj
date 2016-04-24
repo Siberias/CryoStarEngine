@@ -23,6 +23,8 @@
     <ClInclude Include="..\Source\Analysis\ILogger.h" />
     <ClInclude Include="..\Source\Analysis\LogType.h" />
     <ClInclude Include="..\Source\Analysis\WindowsLogger.h" />
+    <ClInclude Include="..\Source\Inlines\MemoryInlines.h" />
+    <ClInclude Include="..\Source\OSDefinitions.h" />
     <ClInclude Include="..\Source\Precompiled.h" />
     <ClInclude Include="..\Source\Types\Vector3.h" />
   </ItemGroup>
@@ -30,7 +32,6 @@
     <ClCompile Include="..\Source\Analysis\BaseLogger.cpp" />
     <ClCompile Include="..\Source\Analysis\LogType.cpp" />
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp" />
-    <ClCompile Include="..\Source\Main.cpp" />
     <ClCompile Include="..\Source\Types\Vector3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -40,26 +41,26 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -84,20 +85,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
-    <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\Source;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\Source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
-    <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\Source;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\Source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
-    <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\Source;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\Source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)Source;$(IncludePath)</IncludePath>
-    <SourcePath>$(SolutionDir)Source;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\Source;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\Source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

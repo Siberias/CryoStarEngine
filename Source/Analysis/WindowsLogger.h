@@ -1,5 +1,7 @@
 #pragma once
 
+#if defined(PLATFORM_WINDOWS)
+
 #include <Analysis/BaseLogger.h>
 
 namespace CryoStar
@@ -15,3 +17,5 @@ namespace CryoStar
 		virtual void Log(const std::string& builtMessage) const override;
 	};
 }
+
+#endif //PLATFORM_WINDOWS

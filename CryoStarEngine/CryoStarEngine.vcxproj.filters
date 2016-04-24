@@ -11,6 +11,12 @@
     <Filter Include="Types">
       <UniqueIdentifier>{52445219-263d-4f3c-a9b4-03c9890306d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataStructures">
+      <UniqueIdentifier>{0f8423b2-8716-4e2b-a1bb-18f59967266e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inlines">
+      <UniqueIdentifier>{fb5ea1e9-d4e4-4d11-9a86-c90e4e46d53a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Analysis\ILogger.h">
@@ -29,9 +35,12 @@
       <Filter>Analysis</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Precompiled.h" />
+    <ClInclude Include="..\Source\OSDefinitions.h" />
+    <ClInclude Include="..\Source\Inlines\MemoryInlines.h">
+      <Filter>Inlines</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\Main.cpp" />
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp">
       <Filter>Analysis</Filter>
     </ClCompile>

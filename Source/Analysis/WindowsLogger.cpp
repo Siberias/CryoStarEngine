@@ -1,5 +1,7 @@
 #include "Precompiled.h"
 
+#if defined(PLATFORM_WINDOWS)
+
 #include "WindowsLogger.h"
 
 #include <Windows.h>
@@ -24,3 +26,5 @@ void WindowsLogger::Log(const std::string& builtMessage) const
 
 	OutputDebugString(modifiedMessage.c_str());
 }
+
+#endif //PLATFORM_WINDOWS
