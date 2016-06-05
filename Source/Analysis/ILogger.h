@@ -2,8 +2,6 @@
 
 #include <Analysis/LogType.h>
 
-#include <string>
-
 namespace CryoStar
 {
 	class ILogger

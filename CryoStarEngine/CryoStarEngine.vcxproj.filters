@@ -17,6 +17,12 @@
     <Filter Include="Inlines">
       <UniqueIdentifier>{fb5ea1e9-d4e4-4d11-9a86-c90e4e46d53a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{6cdca4b5-84fb-4b65-9619-81dc80ef499f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Management">
+      <UniqueIdentifier>{27814769-ddd9-450e-969a-921873a30960}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Analysis\ILogger.h">
@@ -39,6 +45,15 @@
     <ClInclude Include="..\Source\Inlines\MemoryInlines.h">
       <Filter>Inlines</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Entity\Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Management\IPoolable.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Analysis\GlobalLogger.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp">
@@ -51,6 +66,12 @@
       <Filter>Analysis</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Analysis\LogType.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Entity\Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Analysis\GlobalLogger.cpp">
       <Filter>Analysis</Filter>
     </ClCompile>
   </ItemGroup>

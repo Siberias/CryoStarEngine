@@ -20,18 +20,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Analysis\BaseLogger.h" />
+    <ClInclude Include="..\Source\Analysis\GlobalLogger.h" />
     <ClInclude Include="..\Source\Analysis\ILogger.h" />
     <ClInclude Include="..\Source\Analysis\LogType.h" />
     <ClInclude Include="..\Source\Analysis\WindowsLogger.h" />
+    <ClInclude Include="..\Source\Entity\Entity.h" />
     <ClInclude Include="..\Source\Inlines\MemoryInlines.h" />
+    <ClInclude Include="..\Source\Management\IPoolable.h" />
     <ClInclude Include="..\Source\OSDefinitions.h" />
     <ClInclude Include="..\Source\Precompiled.h" />
     <ClInclude Include="..\Source\Types\Vector3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Analysis\BaseLogger.cpp" />
+    <ClCompile Include="..\Source\Analysis\GlobalLogger.cpp" />
     <ClCompile Include="..\Source\Analysis\LogType.cpp" />
     <ClCompile Include="..\Source\Analysis\WindowsLogger.cpp" />
+    <ClCompile Include="..\Source\Entity\Entity.cpp" />
     <ClCompile Include="..\Source\Types\Vector3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
