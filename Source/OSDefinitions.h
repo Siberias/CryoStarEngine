@@ -2,6 +2,9 @@
 
 //Full list of platforms
 //	PLATFORM_WINDOWS
+//  PLATFORM_OSX
+//  PLATFORM_IOS
+//  PLATFORM_ANDROID
 
 //Full list of architectures
 //	ARCHITECTURE_X86

@@ -18,8 +18,8 @@ namespace CryoStar
 		Vector3(float all);
 
 	public:
-		float X;
-		float Y; 
-		float Z;
+		float X = 0.0f;
+		float Y = 0.0f;
+		float Z = 0.0f;
 	};
 }

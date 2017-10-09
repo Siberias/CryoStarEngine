@@ -25,8 +25,7 @@
     <ClInclude Include="..\Source\Analysis\LogType.h" />
     <ClInclude Include="..\Source\Analysis\WindowsLogger.h" />
     <ClInclude Include="..\Source\Entity\Entity.h" />
-    <ClInclude Include="..\Source\Inlines\MemoryInlines.h" />
-    <ClInclude Include="..\Source\Management\IPoolable.h" />
+    <ClInclude Include="..\Source\Memory\MemoryInlines.h" />
     <ClInclude Include="..\Source\OSDefinitions.h" />
     <ClInclude Include="..\Source\Precompiled.h" />
     <ClInclude Include="..\Source\Types\Vector3.h" />
